@@ -1,0 +1,576 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CCB97969-A7D8-4779-9A69-E975AB5515F1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <StartupObject>
+    </StartupObject>
+    <RootNamespace>BaseLib</RootNamespace>
+    <AssemblyName>BaseLib</AssemblyName>
+    <MyType>Windows</MyType>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>BaseLib.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>None</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>BaseLib.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>DBSistemi.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v14.1, Version=14.1.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v14.1, Version=14.1.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v14.1.Core, Version=14.1.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v14.1.Core, Version=14.1.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v14.1, Version=14.1.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v14.1, Version=14.1.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v14.1, Version=14.1.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v14.1, Version=14.1.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v14.1, Version=14.1.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v14.1, Version=14.1.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v14.1, Version=14.1.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Printing" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Windows\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Application\AppStartUp.vb" />
+    <Compile Include="Dialogs\DB_DIALOG.Designer.vb">
+      <DependentUpon>DB_DIALOG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\DB_DIALOG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\DB_DIALOG_CONFERMA_ANNULLA.Designer.vb">
+      <DependentUpon>DB_DIALOG_CONFERMA_ANNULLA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\DB_DIALOG_CONFERMA_ANNULLA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\DB_DIALOG_PARAMETRISTAMPA.Designer.vb">
+      <DependentUpon>DB_DIALOG_PARAMETRISTAMPA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\DB_DIALOG_PARAMETRISTAMPA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\frmEndlessProgress.Designer.vb">
+      <DependentUpon>frmEndlessProgress.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\frmEndlessProgress.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\IProgressCallBacks.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\ProgressControl.Designer.vb">
+      <DependentUpon>ProgressControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\ProgressControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="dlgIndagine.Designer.vb">
+      <DependentUpon>dlgIndagine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dlgIndagine.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dlgIndagineBase.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Form\DBFormIndagineXPO.Designer.vb">
+      <DependentUpon>DBFormIndagineXPO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\DBFormIndagineXPO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\DBFormTableDB_XPO.Designer.vb">
+      <DependentUpon>DBFormTableDB_XPO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\DBFormTableDB_XPO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\DBFormTestDett_XPO.Designer.vb">
+      <DependentUpon>DBFormTestDett_XPO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\DBFormTestDett_XPO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\DBFormTestDett.Designer.vb">
+      <DependentUpon>DBFormTestDett.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\DBFormTestDett.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\DB_BASE.Designer.vb">
+      <DependentUpon>DB_BASE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\DB_BASE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestione Parametri\dsElencoImpianti.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsElencoImpianti.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Gestione Parametri\dsElencoImpianti.vb">
+      <DependentUpon>dsElencoImpianti.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Gestione Parametri\dsParametri.Designer.vb">
+      <DependentUpon>dsParametri.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Form\DBFormGAT.Designer.vb">
+      <DependentUpon>DBFormGAT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\DBFormGAT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\DBFrmParametri.Designer.vb">
+      <DependentUpon>DBFrmParametri.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\DBFrmParametri.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProgress.Designer.vb">
+      <DependentUpon>frmProgress.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmProgress.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestione Barcode\DBBarcodeInput.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Form\DBFormIndagine.Designer.vb">
+      <DependentUpon>DBFormIndagine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\DBFormIndagine.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\DBFormTableDB.Designer.vb">
+      <DependentUpon>DBFormTableDB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\DBFormTableDB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\DBFormBase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\DBFormBase.Designer.vb">
+      <DependentUpon>DBFormBase.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\DBFormRecord.Designer.vb">
+      <DependentUpon>DBFormRecord.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\DBFormRecord.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\DBFormTable.Designer.vb">
+      <DependentUpon>DBFormTable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\DBFormTable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestione Parametri\frmScegliImpianto.Designer.vb">
+      <DependentUpon>frmScegliImpianto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gestione Parametri\frmScegliImpianto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestione Parametri\ParametriBase.vb" />
+    <Compile Include="Gestione sicurezza\Cipher.vb" />
+    <Compile Include="Gestione sicurezza\Config.vb" />
+    <Compile Include="Gestione sicurezza\CryptoException.vb" />
+    <Compile Include="Gestione sicurezza\dbLicensing.vb" />
+    <Compile Include="Gestione sicurezza\frmUpgrade.Designer.vb">
+      <DependentUpon>frmUpgrade.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gestione sicurezza\frmUpgrade.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestione sicurezza\Hash.vb" />
+    <Compile Include="Gestione sicurezza\SysInfo.vb" />
+    <Compile Include="Gestione Upload e Download\Downloader.vb" />
+    <Compile Include="Gestione Upload e Download\frmUploadFile.Designer.vb">
+      <DependentUpon>frmUploadFile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gestione Upload e Download\frmUploadFile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logger\DatabaseMetrics.vb" />
+    <Compile Include="Logger\Logger.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="PackDatabase\frmPackDatabase.Designer.vb">
+      <DependentUpon>frmPackDatabase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PackDatabase\frmPackDatabase.vb" />
+    <Compile Include="Tools\applicationerrorwindow.designer.vb">
+      <DependentUpon>ApplicationErrorWindow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\ApplicationErrorWindow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Exceptions.vb" />
+    <Compile Include="Tools\TableHelper.vb" />
+    <Compile Include="TWU.vb" />
+    <Compile Include="Util\DBXpoUtil.vb" />
+    <Compile Include="Util\FileTypeInformation.vb" />
+    <Compile Include="MessageBox\frmMessage.Designer.vb">
+      <DependentUpon>frmMessage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MessageBox\frmMessage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageBox\LocalizationKeyNotFoundException.vb" />
+    <Compile Include="MessageBox\MessageItem.vb" />
+    <Compile Include="MessageBox\MessagingBasics.vb" />
+    <Compile Include="MessageBox\MessagingEnum.vb" />
+    <Compile Include="MessageBox\Msg.vb" />
+    <Compile Include="Util\PlaySound.vb" />
+    <Compile Include="MessageBox\StringBasics.vb" />
+    <Compile Include="Util\RegistryAccess.vb" />
+    <Compile Include="Util\User32.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Form\DBAbout.designer.vb">
+      <DependentUpon>DBAbout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\DBAbout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaitForm1.Designer.vb">
+      <DependentUpon>WaitForm1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WaitForm1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Dialogs\DB_DIALOG.resx">
+      <DependentUpon>DB_DIALOG.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\DB_DIALOG_CONFERMA_ANNULLA.resx">
+      <DependentUpon>DB_DIALOG_CONFERMA_ANNULLA.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\DB_DIALOG_PARAMETRISTAMPA.resx">
+      <DependentUpon>DB_DIALOG_PARAMETRISTAMPA.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\frmEndlessProgress.resx">
+      <DependentUpon>frmEndlessProgress.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\IProgressCallBacks.resx">
+      <DependentUpon>IProgressCallBacks.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\DBFormGAT.resx">
+      <DependentUpon>DBFormGAT.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\DBFormIndagine.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DBFormIndagine.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\dbFormIndagineXPO.resx">
+      <DependentUpon>DBFormIndagineXPO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\DBFormTableDB.resx">
+      <DependentUpon>DBFormTableDB.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\DBFormBase.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DBFormBase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\DBFormRecord.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DBFormRecord.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\DBFormTable.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DBFormTable.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\DBFormTableDB_XPO.resx">
+      <DependentUpon>DBFormTableDB_XPO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\DBFormTestDett.resx">
+      <DependentUpon>DBFormTestDett.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\DBFormTestDett_XPO.resx">
+      <DependentUpon>DBFormTestDett_XPO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\DBFrmParametri.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DBFrmParametri.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProgress.resx">
+      <DependentUpon>frmProgress.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestione Parametri\frmScegliImpianto.resx">
+      <DependentUpon>frmScegliImpianto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestione sicurezza\frmUpgrade.resx">
+      <DependentUpon>frmUpgrade.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestione Upload e Download\frmUploadFile.resx">
+      <DependentUpon>frmUploadFile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageBox\frmMessage.resx">
+      <DependentUpon>frmMessage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\DBAbout.resx">
+      <DependentUpon>DBAbout.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PackDatabase\frmPackDatabase.resx">
+      <DependentUpon>frmPackDatabase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\applicationerrorwindow.resx">
+      <DependentUpon>ApplicationErrorWindow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaitForm1.resx">
+      <DependentUpon>WaitForm1.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DBSistemi.pfx" />
+    <None Include="Gestione Parametri\dsElencoImpianti.xsc">
+      <DependentUpon>dsElencoImpianti.xsd</DependentUpon>
+    </None>
+    <None Include="Gestione Parametri\dsElencoImpianti.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsElencoImpianti.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Gestione Parametri\dsElencoImpianti.xss">
+      <DependentUpon>dsElencoImpianti.xsd</DependentUpon>
+    </None>
+    <None Include="Gestione Parametri\dsParametri.xsc">
+      <DependentUpon>dsParametri.xsd</DependentUpon>
+    </None>
+    <None Include="Gestione Parametri\dsParametri.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsParametri.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Gestione Parametri\dsParametri.xss">
+      <DependentUpon>dsParametri.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\dsTest.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookmark_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\firstaid_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer_error_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer_info_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer_ok_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer_warning_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stopwatch_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\touch_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fatal.WAV" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newalert.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notify.WAV" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question.WAV" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tip.WAV" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning.WAV" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mail2_send.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4CBD-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\browsedialog.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\..\..\..\source\repos\DatiElettorali\DatiElettorali\Librerie\FlexCel.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
